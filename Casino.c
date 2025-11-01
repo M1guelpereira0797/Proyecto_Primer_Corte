@@ -52,14 +52,15 @@ int main(){
        numero_casino = rand() %37;
        printf("El casino seleccione el numero %d \n", numero_casino );
        
-       ((numero_jugador %2 == 0) != (numero_casino %2 == 0))? printf("Los 2 numeros seleccionados fueron impares: %d %d\n", numero_jugador, numero_casino) : printf("Los 2 numeros seleccionados fueron pares: %d %d\n", numero_jugador, numero_casino);
+       ((numero_jugador %2  ) != (numero_casino %2 ))? printf("Los 2 numeros seleccionados fueron impares: %d %d\n", numero_jugador, numero_casino) : printf("Los 2 numeros seleccionados fueron pares: %d %d\n", numero_jugador, numero_casino);
 
-        total_ganado = ((numero_jugador %2 == 0 )) == (numero_casino %2== 0) ? cantidad_jugador * 1 : -cantidad_jugador;
+        total_ganado = ((numero_jugador %2 )) == (numero_casino %2) ? cantidad_jugador * 1 : -cantidad_jugador;
 
         capital_jugador += total_ganado;
         capital_casino -= total_ganado;
 
         (total_ganado > 0 ) ? printf("Has ganado, tu capital es de: %d \n", capital_jugador) : printf("Has perdido de tu capital es de: %d\n ", cantidad_jugador);
+        (total_ganado > 0 ) ? printf("La perdida del casino es de: %d \n", capital_casino) : printf("La ganacancia del casino es de: %d\n ", capital_casino);
 
        
 
