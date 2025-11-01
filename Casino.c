@@ -41,7 +41,7 @@ int main(){
 
        srand(time(NULL));
 
-       (cantidad_jugador > capital_jugador || cantidad_jugador > capital_casino) ? printf("La cantidad ingresada es superar a tu capital\n "): printf("  Ingreso la cantidad correcta\n ");  
+       (cantidad_jugador > capital_jugador || cantidad_jugador > capital_casino) ? (printf("La cantidad ingresada es superar a tu capital\n "), exit(0)): printf("  Ingreso la cantidad correcta\n ");  
 
        printf("Ingrese el numero que desea jugar: \n"); 
        scanf("%d", &numero_jugador);
