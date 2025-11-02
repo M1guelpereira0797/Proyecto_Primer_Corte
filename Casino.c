@@ -22,7 +22,7 @@ int main(){
     (opcion == 's' || opcion == 'S') 
         ? (printf("Has salido del juego, muchas gracias\n"), exit(0)) 
         : (opcion != 'i' && opcion != 'p') 
-            ? (printf("Opción inválida\n"), exit(0)) 
+            ? (printf("Opción invalida\n"), exit(0)) 
             : printf("Comienza el juego\n");
              
             
@@ -67,7 +67,7 @@ int main(){
         printf("Desea seguir jugando? (s para salir, cualquier otra para continuar): ");
         scanf(" %c", &salir);
 
-        (salir == 's' || salir == 'S') ? (printf("Gracias por jugar. ¡Hasta la próxima!\n"), exit(0)): printf("Continuamos...\n");
+        (salir == 's' || salir == 'S') ? (printf("Gracias por jugar. ¡Hasta la proxima!\n"), exit(0)): printf("Continuamos...\n");
         getchar(); 
 
       
